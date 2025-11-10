@@ -8,7 +8,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">Portal Anggota</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">Portal Anggota</a>
             <div>
                 <span class="text-light me-3">{{ Auth::user()->name }}</span>
                 <form method="POST" action="{{ route('logout') }}" class="d-inline">

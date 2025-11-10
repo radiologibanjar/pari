@@ -9,6 +9,7 @@ use Database\Seeders\ProvincesSeeder;
 use Database\Seeders\CitiesSeeder;
 use Database\Seeders\BranchesSeeder;
 use Database\Seeders\UsersSeeder;
+use Database\Seeders\MemberSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CitiesSeeder::class);
         $this->call(BranchesSeeder::class);
         $this->call(UsersSeeder::class);
+        $this->call(MemberSeeder::class);
     }
 }
