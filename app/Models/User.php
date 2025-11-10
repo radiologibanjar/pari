@@ -51,6 +51,11 @@ class User extends Authenticatable
         return $this->belongsTo(Branch::class);
     }
 
+    public function getBranchLevelAttribute()
+    {
+        return $this->branch ? $this->branch->level : 'pusat';
+    }
+
     public function profile()
     {
         return $this->hasOne(MemberProfile::class);
